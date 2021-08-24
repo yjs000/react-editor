@@ -90,9 +90,9 @@ class Editor extends React.Component {
     if(e.target.files.length > 0){
       const file = e.target.files[0];
   
-      let formData = new FormData();
+      // let formData = new FormData();
   
-      formData.append("file", file);
+      // formData.append("file", file);
   
       // dispatch(sendFile(formData));
   

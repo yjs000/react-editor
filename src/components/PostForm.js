@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Editor from "./Editor";
+import Editor from "./Editor2";
 import { useForm } from "react-hook-form";
 
 const PostForm = () => {
@@ -40,7 +40,7 @@ const PostForm = () => {
       <p className="text-right"><input type="checkbox" name="isTop"  {...register("isTop")}/>상단 고정</p>
 
       {/* {console.log(errors.title)} */}
-      {errors.what && <p>{errors.what.message}</p>}
+      {/* {errors.title && <p>{errors.title.message}</p>} */}
 
 
       <div className="text-center">
