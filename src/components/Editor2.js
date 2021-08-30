@@ -5,11 +5,13 @@ import React, {
 import { useForm } from "react-hook-form";
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
-// import { useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 // import MyQuill from "./MyQuill";
 
 
 const Editor2 = () => {
+
+  dispatch = useDispatch();
 
   const [editorHtml, setEditorHtml] = useState('');
 
@@ -39,6 +41,8 @@ const Editor2 = () => {
     }
   }
 
+  
+
   return (
     <>
       <style type="text/css">
@@ -61,7 +65,7 @@ const Editor2 = () => {
                   value={editorHtml} onChange={setEditorHtml}
                   >
         </ReactQuill>
-        <input id="inputImage" type="file" accept="image/*" onChange={this.insertImage}/>
+        <input id="inputImage" type="file" accept="image/*" onChange={insertImage}/>
         {console.log(editorHtml)}
           
         {/* <div dangerouslySetInnerHTML={{__html: content}}></div>
